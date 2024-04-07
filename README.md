@@ -1,6 +1,5 @@
 # node-backend
 this is public repo for developing a backend system with node.js and RESTful API
-# Snape project
 This lines contains everything needed to get a Express.js development and production environment up and running with Docker Compose.
 
 ### Requirements
@@ -16,7 +15,7 @@ First, run the development server:
 ```bash
 # Create a network, which allows containers to communicate
 # with each other, by using their container name as a hostname
-docker network create snape
+docker network create node-back
 
 # Build dev
 docker compose -f docker-compose.mysql.yml -f docker-compose.mongo.yml -f docker-compose.dev.yml -f docker-compose.nginx.yml build
@@ -33,7 +32,7 @@ First, run the production server.
 ```bash
 # Create a network, which allows containers to communicate
 # with each other, by using their container name as a hostname
-docker network create snape
+docker network create node-back
 
 # Build prod
 docker compose -f docker-compose.mysql.yml -f docker-compose.mongo.yml -f docker-compose.prod.yml -f docker-compose.nginx.yml build
