@@ -1,0 +1,5 @@
+{
+	"ext": ".js,.ts",
+	"exec": "set NODE_ENV=development && set NODE_ENV=development && npx ts-node -r tsconfig-paths/register ./index.ts",
+	"ignore": ["./dist", "./public"]
+}
